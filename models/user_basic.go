@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"gin-chat/utils"
 	"time"
 
@@ -32,8 +31,6 @@ func (table *UserBasics) TableName() string {
 func GetUserList() []*UserBasics {
 	users := make([]*UserBasics, 10)
 	utils.DB.Find(&users)
-	for _, user := range users {
-		fmt.Println(user)
-	}
+
 	return users
 }
