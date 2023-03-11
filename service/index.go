@@ -11,3 +11,9 @@ func GetIndex(c *gin.Context) {
 		"message": "welcome",
 	})
 }
+
+// func GetUserList(c *gin.Context) {
+// 	c.JSON(http.StatusOK, gin.H{
+// 		"messaga":
+// 	})
+// }
